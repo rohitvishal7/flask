@@ -13,10 +13,8 @@ def login():
 
 @app.route('/login_redirect',methods = ['POST'])
 def login_redirect():
-   if request.method == 'POST':
-         return render_template('.html')
-      else:
-         return "invalid Credentials"
+         return render_template('login.html')
+
 
 
 @app.route("/")
