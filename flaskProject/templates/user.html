@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Latest News</h1>
+<br><br><br><br>
+
+<table style="width:100%" border="1px black">
+  <tr>
+    <th>Category</th>
+    <th>News</th>
+  </tr>
+
+{% for key, value in news.iteritems() %}
+ <tr>
+    <td>{{key}}</td>
+    <td>{{value}}</td>
+  </tr>
+{% endfor %}
+  </table>
+</body>
+</html>
