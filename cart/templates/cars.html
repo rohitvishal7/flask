@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<figure>
+{% for  key,value in cars.iteritems() %}
+<br>
+ <img src="{{key}}" height="100px" width="200px"></td>
+    <figcaption>{{value}}</figcaption>
+        <a href={{url_for('addToCart',value=value)}}>Add to Cart</a>
+{% endfor %}
+    </figure>
+</body>
+</html>
