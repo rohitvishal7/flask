@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <body>
+
+
+
+      <form action = "{{ url_for('new') }}" method = "post">
+         <input type = "text" name = "name" placeholder = "Name" /><br>
+         <input type="text" name = "author" placeholder = "author" /><br>
+         <textarea name = "content" placeholder = "content"></textarea><br>
+         <input type = "text" name = "image" placeholder = "image" /><br>
+         <input type = "submit" value = "Submit" />
+      </form>
+      <br>
+      <br><br>
+
+      <form action ="{{url_for('show')}}" method="post">
+          <input type = "submit" value = "Submit" />
+      </form>
+
+
+   </body>
+</html>

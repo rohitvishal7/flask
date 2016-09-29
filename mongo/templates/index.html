@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <table>
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>content</th>
+               <th>author</th>
+               <th>Image</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for student in query %}
+               <tr>
+
+                  <td>{{ student.name }}</td>
+                  <td>{{ student.content }}</td>
+                  <td>{{ student.author }}</td>
+                  <td><img src="{{ student.image }}"></td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+
+
+
+
+
+
+</body>
+</html>
