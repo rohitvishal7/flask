@@ -1,0 +1,7 @@
+<orders>
+    <order id="1">
+        <name>Chair purchase</name>
+        <price>1000</price>
+        <quantity>25</quantity>
+    </order>
+    </orders>
